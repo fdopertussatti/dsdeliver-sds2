@@ -1,7 +1,8 @@
+
 import axios from "axios";
 import { OrderPayload } from "./Orders/types";
 
-const API_URL = process.env.REAC_APP_API_URL;
+const API_URL = process.env.REACT_APP_API_URL; //'https://fernando-estudos-sds2.herokuapp.com'
 const mapboxToken=process.env.REACT_APP_ACCESS_TOKEN_MAP_BOX;
 export function fetchProducts(){
     return axios(`${API_URL}/products`)
